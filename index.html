@@ -1,11 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
 </head>
 <body>
-    
+    <section1>
+
+
+        <nav class="bg-amber-50  px-6 py-3 flex justify-between items-center">
+            <div class="hidden md:flex items-center space-x-2 pl-9 ">
+                <img src="c1-assets/logo-header.png" alt="">
+                <span class="text-lg font-semibold">Browse<span class="text-yellow-500">4</span>Pets</span>
+            </div>
+            <div class="md:hidden flex items-center">
+                <img src="c1-assets/logo-header.png" alt="">
+            </div>
+            <div class="hidden md:flex space-x-6 pr-3 ">
+                <a href="#" class="text-gray-700 hover:text-yellow-500">Find a pet</a>
+                <a href="#" class="text-gray-700 hover:text-yellow-500">Breeds</a>
+                <a href="#" class="text-gray-700 hover:text-yellow-500">Contact us</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-4 pr-9">
+                
+                <button class="text-gray-700 hover:text-yellow-500">🔔</button>
+                <button class="text-gray-700 hover:text-yellow-500">🔍</button>
+                 
+                <button class="border border-gray-400 px-3 py-1 rounded hover:bg-gray-100">Login</button>
+                <button class="bg-yellow-400 text-white px-4 py-1 rounded hover:bg-yellow-500">Register</button>
+            </div>
+            <button id="menu-toggle" class="md:hidden text-gray-700 text-2xl">&#9776;</button>
+        </nav>
+        
+        <div id="mobile-menu" class="hidden flex flex-col bg-amber-50 p-4 space-y-4 md:hidden">
+            <a href="#" class="text-gray-700 hover:text-yellow-500">Find a pet</a>
+            <a href="#" class="text-gray-700 hover:text-yellow-500">Breeds</a>
+            <a href="#" class="text-gray-700 hover:text-yellow-500">Contact us</a>
+            <button class="border border-gray-400 px-3 py-1 rounded hover:bg-gray-100">Login</button>
+            <button class="bg-yellow-400 text-white px-4 py-1 rounded hover:bg-yellow-500">Register</button>
+        </div>
+     </section1>
+
+     <section2>
+        <div class="bg-white flex justify-center items-center">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div >
+                <h2 class="text-5xl py-2">
+                    <b>Pamper Your Pet, Because They Deserve <br> the Bes</b>
+                </h2>
+                <p class="py-2">
+                    Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!
+                </p>
+                <button class="bg-yellow-400 px-4 py-1 rounded">Find a pet</button>
+            </div>
+            <div>
+                <img src="c1-assets/cat-big.png" alt="">
+            </div>
+        </div>
+    </div>
+     </section2>
 </body>
 </html>
